@@ -21,11 +21,11 @@ jobs:
 
       - name: build
         run: yarn build
-        env:
-          GITHUB_PAGES: true
 
       - name: export
         run: yarn export
+        env:
+          GITHUB_PAGES: true
 
       - name: add nojekyll
         run: touch ./out/.nojekyll
